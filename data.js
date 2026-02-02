@@ -16,18 +16,16 @@ const DATA = {
     },
 
     // Summary
-    summary: `Kubernetes & Cloud-Native Architect with 9+ years of experience
-architecting & delivering large, secure, scalable, and resilient
-Microservices Platforms across Multi-Cloud Environments (AWS, Azure, GCP).
-
-Specialized in GPU & AI/ML Infrastructure, Cloud Platform Engineering,
-and driving DevOps Culture to streamline the SDLC and deployment process.`,
+    summary: `Senior Platform Engineer with 9+ years building production
+Kubernetes platforms across AWS, Azure, and GCP. Specialized in GPU &
+AI/ML Infrastructure, multi-tenant platform engineering, and GitOps-driven
+automation at enterprise scale.`,
 
     // Skills organized by category
     skills: {
         "Container & Orchestration": ["Docker", "Kubernetes", "EKS", "AKS", "GKE", "OpenShift", "Rancher", "Helm", "Kubeadm"],
         "GitOps & Service Mesh": ["ArgoCD", "FluxCD", "Istio", "Anthos", "Envoy Gateway", "Argo Rollouts"],
-        "AI/ML & GPU": ["NVIDIA GPU Virtualization", "GPU Passthrough", "Kubeflow", "AIBRIX", "LLM-D", "GPU Scheduling"],
+        "AI/ML & GPU": ["NVIDIA GPU Virtualization", "GPU Passthrough", "Kubeflow", "AIBRIX", "LLM-D", "GPU Scheduling", "vLLM", "SGLang", "Ray", "GPU Operator"],
         "Infrastructure as Code": ["Terraform", "Ansible", "Pulumi", "CloudFormation"],
         "CI/CD & Automation": ["GitLab CI", "GitHub Actions", "Azure DevOps", "Jenkins", "Taskfile", "Bash", "Python"],
         "Cloud Platforms": ["AWS", "Azure", "GCP", "OpenStack", "Proxmox", "VMware vSphere"],
@@ -46,16 +44,19 @@ and driving DevOps Culture to streamline the SDLC and deployment process.`,
             "GPU Scheduling Optimization",
             "Service Mesh for GPU Workloads",
             "Kubeflow & AIBRIX & LLM-D",
-            "Multi-cloud AI/ML Infra"
+            "Multi-cloud AI/ML Infra",
+            "LLM Inference (vLLM, SGLang, AIBRIX)",
+            "GPU Orchestration & Isolation"
         ],
         achievements: [
             "GPU K8s @ Emirates",
             "GKE+Anthos ML Clusters",
             "GPU-accelerated Inference",
             "K8s GPU Workshops",
-            "OpenShift ML Platform"
+            "OpenShift ML Platform",
+            "LLM Inference Platforms"
         ],
-        tools: ["GPU Operator", "CUDA", "Kubeflow", "AIBRIX", "LLM-D", "TensorRT"]
+        tools: ["GPU Operator", "CUDA", "Kubeflow", "AIBRIX", "LLM-D", "TensorRT", "vLLM", "SGLang", "Ray"]
     },
 
     // Key Projects
@@ -119,6 +120,18 @@ and driving DevOps Culture to streamline the SDLC and deployment process.`,
                 "100+ node cluster management",
                 "ArgoCD GitOps practices"
             ]
+        },
+        {
+            name: "private-cloud-platform",
+            description: "Bare-metal private cloud: K8s undercloud + KubeVirt overcloud",
+            company: "Personal",
+            status: "Running",
+            highlights: [
+                "Kubernetes undercloud on bare metal",
+                "KubeVirt VMs as overcloud workloads",
+                "CEPH/Linstor distributed storage",
+                "Envoy Gateway, FluxCD, CloudNativePG"
+            ]
         }
     ],
 
@@ -131,33 +144,33 @@ and driving DevOps Culture to streamline the SDLC and deployment process.`,
             location: "Dubai",
             status: "Running",
             age: "8mo",
-            description: `Partnering with Sr. Leadership for Cloud Native Application,
-Microservices, GPU Virtualization, and Kubernetes Tuning strategies.
+            description: `Building GPU-aware Kubernetes platforms and multi-tenant
+infrastructure on EKS and AKS across AWS and Azure.
 
 KEY ACHIEVEMENTS:
-- Architected GPU-aware Kubernetes Platforms for AI/ML workloads
-- 40% improvement in deployment speed, 60% reduction in downtime
-- Reduced manual configuration efforts by 80%
-- Enhanced deployment frequency, 75% reduction in rollback incidents
-- Multi-tenant platform on Azure/AWS with FluxCD & vCluster`,
+- Architected GPU-aware K8s platforms with NVIDIA virtualization & passthrough
+- 40% faster deployments, 60% reduction in downtime via Terraform/Ansible automation
+- Eliminated 80% of manual configuration through GitOps self-service provisioning
+- 75% fewer rollback incidents with progressive delivery via Istio service mesh
+- Multi-tenant platform serving 20+ teams with FluxCD & vCluster`,
             technologies: ["EKS", "AKS", "FluxCD", "Terraform", "GPU Scheduling", "Istio"]
         },
         {
             company: "intapp",
             role: "Senior DevOps Engineer",
-            period: "Aug 2023 - Sep 2024",
+            period: "Aug 2023 - Apr 2024",
             location: "London",
             status: "Completed",
-            age: "1y1mo",
-            description: `Managed Kubernetes clusters (EKS, AKS, kops) and delivered
-architecture guidance for containerized environments.
+            age: "9mo",
+            description: `Designed secure Kubernetes architectures and automated
+infrastructure for partner-facing SaaS on AKS and EKS.
 
 KEY ACHIEVEMENTS:
-- Secure AKS/EKS architectures for partner-facing SaaS
-- GPU-based workloads for advanced analytics
-- Accelerated AKS upgrade pipeline with minimal downtime
-- Kyverno policies for cost optimization
-- Containerized Python script for 30+ Kubecost deployments`,
+- Secure AKS/EKS architectures with tenant isolation for SaaS workloads
+- Containerized Python tool aggregating cost data from 30+ Kubecost deployments
+- Accelerated AKS upgrade pipeline with minimal-downtime maintenance windows
+- Kyverno policies for governance, cutting costs and improving compliance
+- Automated Azure network provisioning with Terraform, 50% faster deployments`,
             technologies: ["AKS", "EKS", "ArgoCD", "Kyverno", "Istio", "Terraform"]
         },
         {
@@ -167,15 +180,15 @@ KEY ACHIEVEMENTS:
             location: "London",
             status: "Completed",
             age: "1y10mo",
-            description: `Spearheaded AI/ML-ready GKE clusters with Anthos Service Mesh
-for financial services clients.
+            description: `Deployed GKE clusters with Anthos Service Mesh for financial
+services clients with GPU-accelerated inference pipelines.
 
 KEY ACHIEVEMENTS:
-- Complete GKE design template with security patterns
-- Argo Rollouts for ML model deployments (Canary, Dark Release)
-- GPU-accelerated inference with minimal risk
-- Internal workshops on GPU Scheduling in Kubernetes
-- Key point of contact with Google Cloud Teams`,
+- GKE design template adopted as corporate standard for all deployments
+- Argo Rollouts for progressive delivery (Canary, Dark Release) on Anthos
+- GPU-accelerated inference deployments with zero-downtime releases
+- Workshops on GPU Scheduling & Anthos, upskilling 15+ engineers
+- Terraform multi-cluster provisioning, reducing setup from days to hours`,
             technologies: ["GKE", "Anthos", "Istio", "Argo Rollouts", "Terraform", "GPU"]
         },
         {
@@ -185,14 +198,14 @@ KEY ACHIEVEMENTS:
             location: "Nottingham",
             status: "Completed",
             age: "1y",
-            description: `Key role in Global OpenShift Platform deployment supporting
-ML-driven workloads across multiple geographies.
+            description: `Deployed global OpenShift platform supporting ML workloads
+across multiple geographies with 100+ node clusters.
 
 KEY ACHIEVEMENTS:
-- Cilium SDN migration for improved GPU-backed app networking
-- 100+ node RedHAT OpenShift/Kubernetes cluster management
-- AWS bastion hosts & Terraform automation
-- GitOps practices using ArgoCD for AI/ML environments`,
+- Led SDN migration to Cilium with eBPF observability for GPU-backed apps
+- Managed 100+ node OpenShift/K8s clusters with SLA compliance
+- Automated infrastructure with Terraform modules and ArgoCD GitOps
+- Cross-region network connectivity for secure ML data flows`,
             technologies: ["OpenShift", "Cilium", "ArgoCD", "Terraform", "AWS"]
         },
         {
@@ -244,9 +257,7 @@ KEY RESPONSIBILITIES:
     certifications: [
         { name: "Certified Terraform Associate", issuer: "HashiCorp", year: "2022" },
         { name: "ITIL Foundation Certificate", issuer: "PeopleCert", year: "2017" },
-        { name: "CCNA Routing and Switching", issuer: "Cisco", year: "2015" },
-        { name: "CCNA Scaling Networks", issuer: "Cisco", year: "2015" },
-        { name: "CCNA Network Fundamentals", issuer: "Cisco", year: "2014" }
+        { name: "CCNA Routing & Switching", issuer: "Cisco", year: "2015" }
     ],
 
     // Neofetch display
@@ -269,7 +280,7 @@ KEY RESPONSIBILITIES:
             { label: "DE", value: "GitOps (ArgoCD/FluxCD)" },
             { label: "WM", value: "Kubernetes (EKS/AKS/GKE/OpenShift)" },
             { label: "GPU", value: "NVIDIA Virtualization & Scheduling" },
-            { label: "Certs", value: "Terraform, CCNA, ITIL" }
+            { label: "Certs", value: "Terraform Associate, ITIL, CCNA" }
         ]
     }
 };
@@ -371,7 +382,7 @@ const EASTER_EGGS = {
     "netstat": "netstat: command not found - Use 'k get skills' to see networking expertise.",
     "ss": "ss: command not found - Cilium handles all the networking.",
     "nmap": "nmap: command not found - Security scanning? I use Trivy and Falco.",
-    "telnet": "telnet: command not found - It's 2024, we use mTLS (Istio).",
+    "telnet": "telnet: command not found - We use mTLS (Istio) these days.",
 
     // Package managers
     "apt": "apt: command not found - Distroless. No package manager needed.",

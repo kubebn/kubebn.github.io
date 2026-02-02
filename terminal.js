@@ -40,25 +40,24 @@
   <span class="white">██████╔╝╚██████╔╝██║  ██║██║███████║███████║</span>
   <span class="white">╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝</span>  <span class="dim">NOVICKOVS</span>
 
-  <span class="yellow">Sr. Technical DevOps Engineer</span> <span class="dim">|</span> <span class="cyan">Kubernetes & Cloud-Native Architect</span>
+  <span class="yellow">Sr. Technical DevOps Engineer</span> <span class="dim">|</span> <span class="cyan">Kubernetes & Cloud-Native Platform Engineer</span>
   <span class="dim">Emirates, Dubai</span>
 
 <span class="dim">──────────────────────────────────────────────────────────────────────</span>
 
 <span class="white">About:</span>
-  ${DATA.experience_years}+ years designing & delivering large-scale, secure, resilient
-  Microservices Platforms across Multi-Cloud (AWS, Azure, GCP).
-
-  Specialized in shaping modern <span class="yellow">cloud-native AI ecosystems</span>, GPU-accelerated
-  infrastructure, and driving <span class="cyan">DevOps & GitOps culture</span>.
+  ${DATA.experience_years} years building production Kubernetes platforms across
+  Multi-Cloud (AWS, Azure, GCP). Specialized in <span class="yellow">GPU & AI/ML infrastructure</span>,
+  multi-tenant platform engineering, and <span class="cyan">GitOps-driven automation</span>
+  at enterprise scale.
 
 <span class="white">Key Milestones:</span>
-  <span class="cyan">⎈</span> SME in Kubernetes (EKS, AKS, GKE), GitOps (FluxCD, ArgoCD), Service Mesh
-  <span class="cyan">⎈</span> GPU/AI Infrastructure: NVIDIA technologies, Kubeflow, ML orchestration
-  <span class="cyan">⎈</span> Led Cloud Migrations & Digital Transformation projects end-to-end
-  <span class="cyan">⎈</span> DevSecOps: security in CI/CD, compliance & vulnerability mitigation
-  <span class="cyan">⎈</span> SRE practices: improved MTTD/MTTR, 24x7 ops, robust monitoring
-  <span class="cyan">⎈</span> Team leadership & mentoring on K8s, GitOps, GPU Scheduling, SRE
+  <span class="cyan">⎈</span> Kubernetes platforms (EKS, AKS, GKE, OpenShift) at enterprise scale
+  <span class="cyan">⎈</span> GPU/AI Infrastructure: NVIDIA virtualization, Kubeflow, ML pipelines
+  <span class="cyan">⎈</span> Multi-cloud platform engineering across AWS, Azure, and GCP
+  <span class="cyan">⎈</span> GitOps & progressive delivery with ArgoCD, FluxCD, Argo Rollouts
+  <span class="cyan">⎈</span> Observability: Prometheus, Grafana, ELK, Dynatrace, OpenTelemetry
+  <span class="cyan">⎈</span> Infrastructure as Code: Terraform, Ansible, multi-cloud automation
 
 <span class="dim">──────────────────────────────────────────────────────────────────────</span>
 <span class="dim">Distroless container | SecurityContext: restricted | ReadOnlyFS: true</span>
